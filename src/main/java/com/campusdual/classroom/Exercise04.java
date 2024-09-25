@@ -13,18 +13,39 @@ public class Exercise04 {
     }
 
     public static int sumNum(int num) {
-        return 0;
+        int result = 0;
+        for (int i = 0; i <= num; i++) {
+            result += i;
+        }
+        return result;
     }
 
     public static int sumEvenNum(int num) {
-        return 0;
+        int result = 0;
+        num = num * 2;
+        for (int i = 1; i <= num; i++) {
+            if (i % 2 == 0) {
+                result += i;
+            }
+
+        }
+        return result;
+
     }
 
     public static int factorial(int num) {
-        return 0;
+        int result = 1;
+        for (int i = 1; i <= num; ++i) {
+            result = result * i;
+        }
+        return result;
     }
 
     public static int recursiveFactorial(int num) {
-        return 0;
+        if(num == 0){
+            return 1;
+        }
+        else
+            return num * factorial(num-1);
     }
 }
